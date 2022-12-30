@@ -10,17 +10,12 @@ h1, h2 {
     background-color: #8b0000;
 }
 
+.bg-gray {
+    background-color: #505050!important;
+}
+
 .border-light-red {
     border-style: solid;
     border-color: #9c0000;
     border-width: 1px;
-}
-
-#searchInput::placeholder {
-    font-size: 14px;
-}
-
-.nav-item {
-    /*padding: 7px 7px;*/
-    transition: 0.2s;
 }

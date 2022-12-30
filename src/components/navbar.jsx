@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
 import logo from '../images/logoFull.png'
 import NavItem from "./navItem";
+import NavDropdown from "./navDropdown";
+import genres from "../data/genres";
+import difficulties from "../data/difficulties";
 
 
 class SearchBar extends Component {
@@ -16,7 +19,7 @@ class SearchBar extends Component {
                                placeholder="Song name or composer" aria-label="Search"/>
                     </div>
                     <div className="col-sm-3">
-                        <button className="btn btn-secondary my-2 my-sm-0 rounded-0 border-0" id="submitSearch" type="submit">
+                        <button className="btn btn-dark my-2 my-sm-0 rounded-0 border-0" id="submitSearch" type="submit">
                             Search
                         </button>
                     </div>
@@ -41,8 +44,7 @@ class Navbar extends Component {
                         <div className="col-md-6 col-lg-5">
                             <SearchBar/>
                         </div>
-                        <div className="col-md-3">
-                        </div>
+                        <div className="col-md-3"/>
                     </div>
                 </header>
 
@@ -53,16 +55,15 @@ class Navbar extends Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <ul className="navbar-nav mr-auto">
-                            <NavItem linkTo="/" linkName="Home"/>
-                            <NavItem linkTo="/compositions" linkName="Compositions"/>
-                            <NavItem linkTo="/browse" linkName="Sheet Music"/>
-                            <NavItem linkTo="/browse?genre=" linkName="Genres"/>
-                            <NavItem linkTo="/browse?difficulty=" linkName="Difficulty Levels"/>
+                            <NavItem to="/">Home</NavItem>
+                            <NavItem to="/compositions">Compositions</NavItem>
+                            <NavItem to="/browse">Sheet Music</NavItem>
+                            <NavDropdown links={genres}>Genres</NavDropdown>
+                            <NavDropdown links={difficulties}>Difficulties</NavDropdown>
                         </ul>
-
                         <ul className="navbar-nav navbar-right">
-                            <NavItem linkTo="/" linkName="About"/>
-                            <NavItem linkTo="/" linkName="Contact"/>
+                            <NavItem to="/about">About</NavItem>
+                            <NavItem to="/contact">Contact</NavItem>
                         </ul>
                     </div>
                 </nav>
