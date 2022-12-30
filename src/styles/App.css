@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: #8b0000;
+    --main-bg-color-light: #9c0000;
+    --secondary-bg-color: #505050;
+    --secondary-bg-color-light: #5A5A5A;
+}
+
 body > * {
     font-family: "Quicksand", sans-serif;
 }
@@ -7,15 +14,21 @@ h1, h2 {
 }
 
 .bg-red {
-    background-color: #8b0000;
+    background-color: var(--main-bg-color);
 }
 
 .bg-gray {
-    background-color: #505050!important;
+    background-color: var(--secondary-bg-color)!important;
 }
 
 .border-light-red {
     border-style: solid;
-    border-color: #9c0000;
+    border-color: var(--main-bg-color-light);
     border-width: 1px;
+}
+
+.border-top-light-red {
+    border-top-style: solid;
+    border-top-color: var(--main-bg-color-light);
+    border-top-width: 6px;
 }

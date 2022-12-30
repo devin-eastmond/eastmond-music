@@ -59,7 +59,7 @@ class Navbar extends Component {
                             <NavItem to="/compositions">Compositions</NavItem>
                             <NavItem to="/browse">Sheet Music</NavItem>
                             <NavDropdown links={genres}>Genres</NavDropdown>
-                            <NavDropdown links={difficulties}>Difficulties</NavDropdown>
+                            <NavDropdown links={difficulties}>Difficulty Levels</NavDropdown>
                         </ul>
                         <ul className="navbar-nav navbar-right">
                             <NavItem to="/about">About</NavItem>

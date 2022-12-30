@@ -17,6 +17,7 @@ class NavDropdown extends Component {
                 <Link to={links.to} className="nav-link text-white p-3">{links.linkName}</Link>
             </Dropdown.Item>
         );
+
         return (
             <Dropdown>
                 <Dropdown.Toggle className="nav-item nav-link text-white p-3 rounded-0 border-0 bg-transparent">
