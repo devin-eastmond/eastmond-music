@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/navbar.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 class NavItem extends Component {
     children;
@@ -11,11 +12,11 @@ class NavItem extends Component {
     }
     render() {
         return (
-            <li className="nav-item active">
+            <Nav.Link className="p-0 nav-item">
                 <Link to={this.props.to} className="nav-link text-white p-3">
                     {this.children}
                 </Link>
-            </li>
+            </Nav.Link>
         );
     }
 }

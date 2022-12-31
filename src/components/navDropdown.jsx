@@ -20,7 +20,7 @@ class NavDropdown extends Component {
 
         return (
             <Dropdown>
-                <Dropdown.Toggle className="nav-item nav-link text-white p-3 rounded-0 border-0 bg-transparent">
+                <Dropdown.Toggle className="nav-item nav-link text-white p-3 rounded-0 border-0 bg-transparent w-100 text-start">
                     {this.children}
                 </Dropdown.Toggle>
 
