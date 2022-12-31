@@ -22,7 +22,6 @@
 }
 
 .dropdown-menu {
-    margin-top: -1px!important;
     height: 0;
     display: block!important;
     transition: height 0.2s ease;

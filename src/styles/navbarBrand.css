@@ -1,0 +1,26 @@
+#homeIcon {
+    width: 56px;
+    height: 48px;
+}
+
+#homeIcon:hover img {
+    transform: rotate(180deg);
+}
+
+#iconWithBars,
+#iconNoBars {
+    transition: 0.5s;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    margin-top: -2px;
+    height: 30px;
+}
+
+#homeIcon #iconWithBars {
+    opacity: 1;
+}
+
+#homeIcon:hover #iconWithBars {
+    opacity: 0;
+}

@@ -1,11 +1,20 @@
 import './styles/App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import {Outlet} from "react-router-dom";
 import Footer from "./components/footer";
-import Menu from "./components/menu";
+import Navbar from "./components/navbar/navbar";
+import Header from "./components/header";
 
 
 const App = () => {
-  return <><Menu/><Outlet/><Footer/></>
+  return (
+      <>
+        <Header/>
+        <Navbar/>
+        <Outlet/>
+        <Footer/>
+      </>
+  )
 };
 
 
