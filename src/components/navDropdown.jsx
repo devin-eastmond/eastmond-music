@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/navbar.css';
+import '../styles/menu.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -9,6 +9,7 @@ class NavDropdown extends Component {
     constructor(props) {
         super(props);
         this.children = props.children;
+        this.state = {isActive: false}
     }
     render() {
         const links = this.props.links;
@@ -18,15 +19,24 @@ class NavDropdown extends Component {
             </Dropdown.Item>
         );
 
+        const handleClick = isMouseExit => {
+            if (!isMouseExit || this.state.isActive) {
+                this.setState({isActive: !this.state.isActive});
+            }
+        };
+
+        const dropdownClass = "dropdown-menu rounded-0 border-0 bg-gray p-0";
+
         return (
-            <Dropdown>
-                <Dropdown.Toggle className="nav-item nav-link text-white p-3 rounded-0 border-0 bg-transparent w-100 text-start">
+            <Dropdown onClick={() => handleClick(false)} onMouseEnter={() => handleClick(false)}
+                      onMouseLeave={() => handleClick(true)}>
+                <Dropdown.Toggle
+                    className="nav-item nav-link text-white p-3 rounded-0 border-0 bg-transparent w-100 text-start">
                     {this.children}
                 </Dropdown.Toggle>
-
-                <Dropdown.Menu className="dropdown-menu rounded-0 border-0 bg-gray p-0">
+                <div className={this.state.isActive ? dropdownClass + " show" : dropdownClass}>
                     {dropdownItems}
-                </Dropdown.Menu>
+                </div>
             </Dropdown>
         );
     }

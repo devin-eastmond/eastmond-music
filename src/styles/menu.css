@@ -6,10 +6,6 @@
     background-color: var(--main-bg-color-light)!important;
 }
 
-.dropdown-menu {
-    margin-top: -1px!important;
-}
-
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: var(--secondary-bg-color-light)!important;
@@ -23,6 +19,14 @@
     font-size: 14px;
 }
 
-.navbar-collapse {
-    transition: 0.5s;
+.dropdown-menu {
+    margin-top: -1px!important;
+    height: 0;
+    display: block!important;
+    transition: height 0.2s ease;
+    overflow: hidden;
+}
+
+.dropdown-menu.show {
+    height: 170px;
 }
