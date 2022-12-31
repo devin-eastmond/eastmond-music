@@ -4,12 +4,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
+
 class NavItem extends Component {
     children;
+
     constructor(props) {
         super(props);
         this.children = props.children;
     }
+
     render() {
         return (
             <Nav.Link className="p-0 nav-item">
@@ -20,5 +23,6 @@ class NavItem extends Component {
         );
     }
 }
+
 
 export default NavItem;

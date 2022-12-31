@@ -13,4 +13,5 @@ let difficulties = [
     }
 ]
 
+
 export default difficulties;

@@ -2,12 +2,14 @@
     width: 275px;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item.active {
     background-color: var(--main-bg-color-light)!important;
 }
 
 .dropdown-item:hover,
-.dropdown-item:focus {
+.dropdown-item:focus,
+.dropdown-item.active {
     background-color: var(--secondary-bg-color-light)!important;
 }
 

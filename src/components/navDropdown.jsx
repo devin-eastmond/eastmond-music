@@ -4,13 +4,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
 
+
 class NavDropdown extends Component {
     children;
+
     constructor(props) {
         super(props);
         this.children = props.children;
         this.state = {isActive: false}
     }
+
     render() {
         const links = this.props.links;
         const dropdownItems = links.map((links) =>
@@ -18,14 +21,13 @@ class NavDropdown extends Component {
                 <Link to={links.to} className="nav-link text-white p-3">{links.linkName}</Link>
             </Dropdown.Item>
         );
+        const dropdownClass = "dropdown-menu rounded-0 border-0 bg-gray p-0";
 
         const handleClick = isMouseExit => {
             if (!isMouseExit || this.state.isActive) {
                 this.setState({isActive: !this.state.isActive});
             }
         };
-
-        const dropdownClass = "dropdown-menu rounded-0 border-0 bg-gray p-0";
 
         return (
             <Dropdown onClick={() => handleClick(false)} onMouseEnter={() => handleClick(false)}
@@ -41,5 +43,6 @@ class NavDropdown extends Component {
         );
     }
 }
+
 
 export default NavDropdown;

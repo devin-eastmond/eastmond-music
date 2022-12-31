@@ -10,6 +10,7 @@ import Compositions from "./pages/compositions";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
@@ -26,6 +27,7 @@ root.render(
         </BrowserRouter>
     </div>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
