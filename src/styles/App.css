@@ -23,6 +23,10 @@ h1, h2 {
     background-color: var(--secondary-bg-color)!important;
 }
 
+.text-gray {
+    color: var(--secondary-bg-color);
+}
+
 .border-light-red {
     border-style: solid;
     border-color: var(--main-bg-color-light);
