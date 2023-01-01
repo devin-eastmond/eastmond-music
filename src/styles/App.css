@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #8b0000;
-    --main-bg-color-light: #9c0000;
+    --main-bg-color-light: #a60505;
+    --main-bg-color-lighter: #c82333;
     --secondary-bg-color: #505050;
     --secondary-bg-color-light: #5A5A5A;
     --secondary-bg-color-dark: #303030;
@@ -34,6 +35,13 @@ h1, h2 {
     border-top-width: 6px;
 }
 
+.border-bottom-lighter-red {
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: var(--main-bg-color-lighter);
+}
+
 .btn-gray {
     background-color: var(--secondary-bg-color-dark) !important;
     color: white!important;
@@ -41,4 +49,27 @@ h1, h2 {
 
 .btn-gray:hover {
     background-color: var(--secondary-bg-color) !important;
+}
+
+.background-image {
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.header-text {
+    font-size: 45px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 8px #55555566;
+}
+
+.back-arrow {
+    transition: 0.2s;
+    transform: rotate(180deg)!important;
+}
+
+#back-button:hover .back-arrow {
+    transform: translateX(-10px) rotate(180deg)!important;
 }
