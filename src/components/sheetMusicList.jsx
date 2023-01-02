@@ -7,77 +7,48 @@ class SheetMusicList extends Component {
         return (
             <div className="bg-dark-gray pb-5" style={{backgroundImage: `url(${background})`, backgroundSize: "500px"}}>
                 <h2 className="p-5 h1 text-white">All Sheet Music</h2>
-                <div className="container">
+                <div className="m-4 mb-0 mt-0">
                     <div className="grid row">
-                        <div className="col mb-5">
-                            <div className="song-wrapper m">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
+                        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
+                            <div className="song-wrapper d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
                             </div>
                         </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
-                                <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
-                        </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
-                                <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
-                        </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
-                                <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
-                        </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
-                                <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
-                        </div>
-                        <div className="col mb-5">
-                            <div className="song-wrapper">
-                                <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-md-8 col-lg-9 col-xl-5 mb-5"></div>
-                        <div className="col-lg-9 col-xl-2"></div>
-                        <div className="col mb-5"></div>
-                        <div className="col-xl-5 mb-5"></div>
                     </div>
                 </div>
             </div>

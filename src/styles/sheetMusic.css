@@ -1,0 +1,40 @@
+.sheet {
+    width: 300px;
+    height: 400px;
+    background-size: 300px auto;
+    box-shadow: var(--box-shadow-light);
+    transition: 0.2s;
+}
+
+.sheet:hover {
+    box-shadow: var(--box-shadow-dark);
+    transform: scale(1.025);
+}
+
+.sheet-info {
+    width: 330px;
+    height: 175px;
+    box-shadow: var(--box-shadow-light);
+}
+
+.text-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+.song-wrapper {
+    zoom: 0.7;
+}
+
+@media only screen and (max-width: 575px) {
+    .song-wrapper {
+        zoom: 0.9;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1450px) {
+    .song-wrapper {
+        zoom: 0.57;
+    }
+}

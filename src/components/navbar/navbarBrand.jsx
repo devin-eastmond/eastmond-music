@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import altoClef from "../../images/AltoClef.png";
 import altoClefNoBar from "../../images/AltoClefNoBar.png";
-import '../../styles/navbarBrand.css';
 
 
 class NavbarBrand extends Component {
