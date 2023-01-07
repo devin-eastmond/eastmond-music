@@ -38,3 +38,17 @@
         zoom: 0.57;
     }
 }
+
+.view-song {
+    width: 80%;
+    background: linear-gradient(-45deg, rgb(240, 50, 50), white 100%);
+}
+
+.view-song img {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.view-song:hover img {
+    opacity: 0.65;
+}
