@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SheetMusic from "./sheetMusic";
 import background from "../images/pattern3.png";
+import {Link} from "react-router-dom";
 
 class SheetMusicList extends Component {
     render() {
@@ -10,44 +11,44 @@ class SheetMusicList extends Component {
                 <div className="m-4 mb-0 mt-0">
                     <div className="grid row">
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-5">
-                            <div className="song-wrapper d-flex align-items-center justify-content-center">
+                            <Link to="/view" className="song-wrapper text-decoration-none d-flex align-items-center justify-content-center">
                                 <SheetMusic songName="Dragonborn" composer="Jeremy Soule" difficulty="Advanced Piano"/>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
